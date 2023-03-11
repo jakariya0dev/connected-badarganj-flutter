@@ -1,13 +1,7 @@
 import 'package:connected_badarganj/views/common_list_page.dart';
 import 'package:flutter/material.dart';
 
-import 'views/home_page.dart';
-
-// scaffold color for light mode
-Color lightScaffoldColor = Colors.grey.shade200;
-
-List allPages = const [HomePage(), CommonListPage()];
-int currentPageIndex = 0;
+import '../views/home_page.dart';
 
 List<String> dashIcons = [
   'icon_administration.png',

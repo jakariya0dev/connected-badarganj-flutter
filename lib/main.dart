@@ -1,6 +1,6 @@
+import 'package:connected_badarganj/views/administration_page.dart';
+import 'package:connected_badarganj/views/home_page.dart';
 import 'package:flutter/material.dart';
-
-import 'views/view_holder.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const ViewHolder(),
+      home: const HomePage(),
     );
   }
 }
