@@ -1,12 +1,20 @@
 import 'package:carousel_slider/carousel_slider.dart';
-import 'package:connected_badarganj/const/const.dart';
+import 'package:connected_badarganj/const/data.dart';
+import 'package:connected_badarganj/views/DoctorChamber.dart';
 import 'package:connected_badarganj/views/administration_page.dart';
 import 'package:connected_badarganj/views/common_list_page.dart';
 import 'package:connected_badarganj/views/education_page.dart';
+import 'package:connected_badarganj/views/great_personality.dart';
+import 'package:connected_badarganj/views/pouro_page.dart';
+import 'package:connected_badarganj/views/travel_spot_page.dart';
+import 'package:connected_badarganj/views/up_page.dart';
 import 'package:connected_badarganj/widgets/main_bottom_ad.dart';
 import 'package:connected_badarganj/widgets/my_appbar.dart';
 import 'package:connected_badarganj/widgets/my_drawer.dart';
 import 'package:flutter/material.dart';
+
+import 'BloodDonors.dart';
+import 'emergency_page.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -60,7 +68,7 @@ class _HomePageState extends State<HomePage> {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     Image.asset(
-                      'assets/images/${dashIcons[index]}',
+                      'assets/icons/${dashIcons[index]}',
                       height: 60,
                       width: 60,
                     ),
@@ -136,9 +144,60 @@ class _HomePageState extends State<HomePage> {
       Navigator.push(context,
           MaterialPageRoute(builder: (context) => const CommonListPage()));
     }
+    // Educational institute
     else if(index == 4){
       Navigator.push(context,
           MaterialPageRoute(builder: (context) => const EducationPage()));
+    }
+    // Emergency
+    else if(index == 5){
+      Navigator.push(context,
+          MaterialPageRoute(builder: (context) => const EmergencyPage()));
+    }
+    // Journalist
+    else if(index == 6){
+      Navigator.push(context,
+          MaterialPageRoute(builder: (context) => const CommonListPage()));
+    }
+    // Badarganj Pourosova
+    else if(index == 7){
+      Navigator.push(context,
+          MaterialPageRoute(builder: (context) => const PouroPage()));
+    }
+    // Union Porishod
+    else if(index == 8){
+      Navigator.push(context,
+          MaterialPageRoute(builder: (context) => const UpPage()));
+    }
+    // Railway
+    else if(index == 9){
+      Navigator.push(context,
+          MaterialPageRoute(builder: (context) => const PouroPage()));
+    }
+    // Bus
+    else if(index == 10){
+      Navigator.push(context,
+          MaterialPageRoute(builder: (context) => const UpPage()));
+    }
+    // Doctor Chamber
+    else if(index == 11){
+      Navigator.push(context,
+          MaterialPageRoute(builder: (context) => const DoctorChamberPage()));
+    }
+    // Blood donors
+    else if(index == 12){
+      Navigator.push(context,
+          MaterialPageRoute(builder: (context) => const BloodDonors()));
+    }
+    // Great Personality
+    else if(index == 13){
+      Navigator.push(context,
+          MaterialPageRoute(builder: (context) => const GreatPersonalityPage()));
+    }
+    // Place
+    else if(index == 14){
+      Navigator.push(context,
+          MaterialPageRoute(builder: (context) => const TravelSpotPage()));
     }
   }
 }

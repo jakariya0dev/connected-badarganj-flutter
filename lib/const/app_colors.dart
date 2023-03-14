@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
 
 // scaffold color for light mode
-const Color kLightScaffoldColor = Colors.deepPurple;
+final Color kLightScaffoldColor = Colors.grey.shade200;
+const Color kContainerColorForStack = Colors.deepPurpleAccent;
+

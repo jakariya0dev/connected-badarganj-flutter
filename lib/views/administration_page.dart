@@ -18,7 +18,7 @@ class _AdministrationPageState extends State<AdministrationPage> {
     return Scaffold(
       backgroundColor: Colors.deepPurple,
       appBar: const MyAppBar(),
-      drawer: const MyDrawer(),
+      // drawer: const MyDrawer(),
       body: SingleChildScrollView(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,

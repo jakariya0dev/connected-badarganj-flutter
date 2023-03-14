@@ -14,9 +14,9 @@ class _CommonListPageState extends State<CommonListPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: kLightScaffoldColor,
       appBar: const MyAppBar(),
       body: Container(
-        color: kLightScaffoldColor,
         padding: const EdgeInsets.all(14),
         constraints: const BoxConstraints.expand(),
         child: ListView.builder(
@@ -24,9 +24,12 @@ class _CommonListPageState extends State<CommonListPage> {
             return Container(
               margin: const EdgeInsets.only(top: 8),
               decoration: BoxDecoration(
-                  color: Colors.white, borderRadius: BorderRadius.circular(10)),
+                   color: Colors.white, borderRadius: BorderRadius.circular(10),
+              ),
               child: const ListTile(
-                leading: CircleAvatar(),
+                leading: CircleAvatar(
+                  child: Icon(Icons.person),
+                ),
                 title: Text('Tis is title'),
                 subtitle: Text('This is subtype'),
               ),
@@ -34,7 +37,7 @@ class _CommonListPageState extends State<CommonListPage> {
           },
         ),
       ),
-      bottomNavigationBar: MainBottomAd(),
+      bottomNavigationBar: const MainBottomAd(),
     );
   }
 }
