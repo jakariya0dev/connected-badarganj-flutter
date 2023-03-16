@@ -17,12 +17,12 @@ class _UpPageState extends State<UpPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: kLightScaffoldColor,
+      backgroundColor: AppColors.kLightScaffoldColor,
       appBar: const MyAppBar(),
       body: Stack(
         children: [
           Container(
-            color: kContainerColorForStack,
+            color: AppColors.kContainerColorForStack,
             height: kContainerHeightForStack,
           ),
           Column(

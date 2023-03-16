@@ -1,6 +1,7 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:connected_badarganj/const/data.dart';
-import 'package:connected_badarganj/views/DoctorChamber.dart';
+import 'package:connected_badarganj/views/bus_page.dart';
+import 'package:connected_badarganj/views/doctor_chamber.dart';
 import 'package:connected_badarganj/views/administration_page.dart';
 import 'package:connected_badarganj/views/common_list_page.dart';
 import 'package:connected_badarganj/views/education_page.dart';
@@ -13,7 +14,7 @@ import 'package:connected_badarganj/widgets/my_appbar.dart';
 import 'package:connected_badarganj/widgets/my_drawer.dart';
 import 'package:flutter/material.dart';
 
-import 'BloodDonors.dart';
+import 'blood_donors.dart';
 import 'emergency_page.dart';
 
 class HomePage extends StatefulWidget {
@@ -172,7 +173,7 @@ class _HomePageState extends State<HomePage> {
     // Railway
     else if(index == 9){
       Navigator.push(context,
-          MaterialPageRoute(builder: (context) => const PouroPage()));
+          MaterialPageRoute(builder: (context) => const BusPage()));
     }
     // Bus
     else if(index == 10){

@@ -2,7 +2,6 @@ import 'package:connected_badarganj/const/app_colors.dart';
 import 'package:connected_badarganj/const/app_strings.dart';
 import 'package:connected_badarganj/widgets/main_bottom_ad.dart';
 import 'package:connected_badarganj/widgets/my_appbar.dart';
-import 'package:connected_badarganj/widgets/my_drawer.dart';
 import 'package:flutter/material.dart';
 
 class AdministrationPage extends StatefulWidget {
@@ -63,7 +62,7 @@ class _AdministrationPageState extends State<AdministrationPage> {
                             margin: const EdgeInsets.symmetric(vertical: 5),
                             decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(50),
-                                color: kLightScaffoldColor),
+                                color: AppColors.kLightScaffoldColor),
                             child: const Text('সংসদ সদস্য', style: TextStyle(color: Colors.white, fontSize: 10),),),
                         const Text('মোঃ আবু সাইদ', style: TextStyle(fontSize: 16),),
                         const Text('Email address: abc123@gmail.com'),

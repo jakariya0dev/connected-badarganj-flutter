@@ -14,7 +14,7 @@ class _CommonListPageState extends State<CommonListPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: kLightScaffoldColor,
+      backgroundColor: AppColors.kLightScaffoldColor,
       appBar: const MyAppBar(),
       body: Container(
         padding: const EdgeInsets.all(14),
